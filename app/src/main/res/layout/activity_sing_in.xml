@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDDDD"
+    tools:context=".LoginBoard.SingIn">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/SUname"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/SUemai"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableStart="@drawable/ic_baseline_lemail"
+                android:drawableLeft="@drawable/ic_baseline_lemail"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Your Email"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/SUpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint=" Set Password"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/SUrepassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint=" Re - Password"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <Button
+                android:id="@+id/SuResisbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:text="create an account" />
+
+            <Button
+                android:id="@+id/alerady"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
+                android:text="already have an account ?"
+                app:backgroundTint="#2C8DBF" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

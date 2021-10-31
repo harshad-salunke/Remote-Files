@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="Open_Imagec.class"
+
+    >
+
+    <item
+        android:id="@+id/download_image"
+        android:icon="@drawable/ic_baseline_cloud_download_24"
+        app:showAsAction="always"
+        android:titleCondensed="Download"
+        android:title="Download" />
+
+</menu>

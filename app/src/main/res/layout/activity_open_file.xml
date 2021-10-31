@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OpenFile">
+
+
+    <ProgressBar
+        android:id="@+id/file_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/cornar_border"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDuration="10"
+        android:indeterminateOnly="true"
+        android:maxHeight="24dip"
+        android:minHeight="24dip"
+        android:progressBackgroundTint="#F30404"
+        android:progressBackgroundTintMode="multiply"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/file_list_item_view" />
+
+    <ListView
+        android:id="@+id/file_list_item_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="80dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/File_floating_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom_nevigation"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            app:backgroundTint="#E37D7D"
+
+            app:fabSize="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.954"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.917"
+            app:srcCompat="@drawable/ic_baseline_create_new_folder_24"
+            tools:ignore="VectorDrawableCompat,SpeakableTextPresentCheck" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/File_floating_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom_nevigation"
+
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            app:backgroundTint="#E37D7D"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.954"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_add_photo_alternate_24"
+            tools:ignore="VectorDrawableCompat" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/File_floating_doc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom_nevigation"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            app:backgroundTint="#E37D7D"
+
+            app:fabSize="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.954"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.917"
+            app:srcCompat="@drawable/ic_baseline_note_add_24"
+            tools:ignore="VectorDrawableCompat" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/File_floating_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom_nevigation"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.954"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.917"
+            app:srcCompat="@drawable/ic_baseline_keyboard_arrow_up_24"
+            tools:ignore="VectorDrawableCompat" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
