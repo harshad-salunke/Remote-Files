@@ -41,7 +41,7 @@ public class Open_Image extends AppCompatActivity {
     String urls;
     String databaseRoot=null;
     String file_name;
-    String file_uri=null;
+    String file_uri=null;1
 //    ProgressDialog dialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
